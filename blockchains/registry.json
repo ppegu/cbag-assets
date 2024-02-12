@@ -4,7 +4,7 @@
         "name": "Bitcoin",
         "coinId": 0,
         "symbol": "BTC",
-        "isEnabled": true,
+        "isActive": true,
         "balance": 0,
         "decimals": 8,
         "blockchain": "Bitcoin",
@@ -55,7 +55,7 @@
         "name": "Litecoin",
         "coinId": 2,
         "symbol": "LTC",
-        "isEnabled": true,
+        "isActive": true,
         "balance": 0,
         "decimals": 8,
         "blockchain": "Bitcoin",
@@ -97,6 +97,7 @@
         "name": "Dogecoin",
         "coinId": 3,
         "symbol": "DOGE",
+        "isActive": true,
         "decimals": 8,
         "blockchain": "Bitcoin",
         "derivation": [
@@ -130,6 +131,7 @@
         "name": "Ethereum",
         "coinId": 60,
         "symbol": "ETH",
+        "isActive": true,
         "decimals": 18,
         "blockchain": "Ethereum",
         "derivation": [
