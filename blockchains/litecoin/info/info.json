@@ -1,0 +1,56 @@
+{
+    "id": "litecoin",
+    "name": "Litecoin",
+    "website": "https://litecoin.org/",
+    "description": "Litecoin is a peer-to-peer Internet currency that enables instant, near-zero cost payments to anyone in the world.",
+    "research": "https://research.binance.com/en/projects/litecoin",
+    "symbol": "LTC",
+    "type": "coin",
+    "decimals": 8,
+    "status": "active",
+    "blockchain": "bitcoin",
+    "derivation": [
+        {
+            "path": "m/84'/2'/0'/0/0",
+            "xpub": "0x04b24746",
+            "xprv": "0x04b2430c"
+        },
+        {
+            "name": "legacy",
+            "path": "m/44'/2'/0'/0/0",
+            "xpub": "0x0488b21e",
+            "xprv": "0x0488ade4"
+        }
+    ],
+    "wif": "0x30",
+    "hrp": "ltc",
+    "explorer": {
+        "url": "https://blockchair.com/litecoin",
+        "txPath": "/transaction/",
+        "accountPath": "/address/"
+    },
+    "info": {
+        "url": "https://litecoin.org",
+        "source": "https://github.com/trezor/blockbook",
+        "rpc": "",
+        "documentation": "https://github.com/trezor/blockbook/blob/master/docs/api.md"
+    },
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/litecoin-project/litecoin"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/LitecoinProject"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/litecoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.allcryptowhitepapers.com/litecoin-whitepaper/"
+        }
+    ]
+}

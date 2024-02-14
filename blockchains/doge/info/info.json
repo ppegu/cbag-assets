@@ -1,0 +1,48 @@
+{
+    "id": "doge",
+    "name": "Dogecoin",
+    "website": "http://dogecoin.com",
+    "description": "Dogecoin is an open source peer-to-peer digital currency, favored by Shiba Inus worldwide. Introduced as a joke currency on 6 December 2013, Dogecoin quickly developed its own online community.",
+    "research": "https://research.binance.com/en/projects/dogecoin",
+    "symbol": "DOGE",
+    "type": "coin",
+    "decimals": 8,
+    "status": "active",
+    "derivation": [
+        {
+            "path": "m/44'/3'/0'/0/0",
+            "xpub": "0x02facafd",
+            "xprv": "0x02fac398"
+        }
+    ],
+    "wif": "0x9E",
+    "explorer": {
+        "url": "https://blockchair.com/dogecoin",
+        "txPath": "/transaction/",
+        "accountPath": "/address/"
+    },
+    "info": {
+        "url": "https://dogecoin.com",
+        "source": "https://github.com/trezor/blockbook",
+        "rpc": "",
+        "documentation": "https://github.com/trezor/blockbook/blob/master/docs/api.md"
+    },
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/dogecoin/dogecoin"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/dogecoin"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/dogecoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/dogecoin/dogecoin/blob/master/README.md"
+        }
+    ]
+}
