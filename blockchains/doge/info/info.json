@@ -8,6 +8,7 @@
     "type": "coin",
     "decimals": 8,
     "status": "active",
+    "blockchain": "bitcoin",
     "derivation": [
         {
             "path": "m/44'/3'/0'/0/0",
