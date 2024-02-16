@@ -38,6 +38,8 @@
     ],
     "wif": "0x80",
     "hrp": "bc",
+    "p2pkhPrefix": 0,
+    "p2shPrefix": 5,
     "links": [
         {
             "name": "github",

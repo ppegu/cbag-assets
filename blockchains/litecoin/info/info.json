@@ -23,6 +23,8 @@
         }
     ],
     "wif": "0x30",
+    "p2pkhPrefix": 48,
+    "p2shPrefix": 50,
     "hrp": "ltc",
     "explorer": {
         "url": "https://blockchair.com/litecoin",

@@ -16,6 +16,8 @@
         }
     ],
     "wif": "0x9E",
+    "p2pkhPrefix": 30,
+    "p2shPrefix": 22,
     "explorer": {
         "url": "https://blockchair.com/dogecoin",
         "txPath": "/transaction/",
