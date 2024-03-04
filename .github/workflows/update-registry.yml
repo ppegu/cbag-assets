@@ -30,4 +30,5 @@ jobs:
 
           git add .
           git commit -m "Update registry"
+          git pull
           git push
