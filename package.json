@@ -9,6 +9,7 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "registry": "bun src/scripts/update-registry.ts"
+    "registry": "bun src/scripts/update-registry.ts",
+    "assets": "bun src/scripts/update-assets.ts"
   }
 }

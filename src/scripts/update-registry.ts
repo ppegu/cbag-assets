@@ -1,11 +1,6 @@
 import fs from "fs";
 import path from "path";
-
-const blockchainsPath = path.join(__dirname, "../../blockchains");
-const registryJsonPath = path.join(
-  __dirname,
-  "../../blockchains/registry.json"
-);
+import { blockchainsPath, registryJsonPath } from "./constant";
 
 function main() {
   console.log("Updating registry...");
