@@ -25,16 +25,13 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git status --porcelain | grep -q . || true
-          CHANGES=$?
-
-          if [ $CHANGES -eq 0 ]; then
-            git config user.name "ppegu"
-            git config user.email "pranpegu997@gmail.com"
-            git add .
-            git commit -m "Update assets"
-            git pull
-            git push
-          else
-            echo "No changes to commit."
-          fi
+          if [[ $(git status --porcelain) ]]; then
+             git config user.name "ppegu"
+             git config user.email "pranpegu997@gmail.com"
+             git add .
+             git commit -m "Update assets"
+             git pull
+             git push
+           else
+             echo "No changes to commit."
+           fi
