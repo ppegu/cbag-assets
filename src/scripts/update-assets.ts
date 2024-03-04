@@ -46,6 +46,8 @@ function updateBlockchainAssets(network: string) {
 
       if (!info) continue;
 
+      if (info.status !== "active") continue;
+
       tokens.push({
         ...info,
         network: network,
