@@ -64,7 +64,8 @@
       "source": "https://github.com/trezor/blockbook",
       "rpc": "",
       "documentation": "https://github.com/trezor/blockbook/blob/master/docs/api.md"
-    }
+    },
+    "logo": "https://raw.githubusercontent.com/ppegu/cbag-assets/main/blockchains/bitcoin/info/logo.png"
   },
   {
     "id": "litecoin",
@@ -122,7 +123,8 @@
         "name": "whitepaper",
         "url": "https://www.allcryptowhitepapers.com/litecoin-whitepaper/"
       }
-    ]
+    ],
+    "logo": "https://raw.githubusercontent.com/ppegu/cbag-assets/main/blockchains/litecoin/info/logo.png"
   },
   {
     "id": "ethereum",
@@ -175,7 +177,8 @@
         "name": "whitepaper",
         "url": "https://github.com/ethereum/wiki/wiki/White-Paper"
       }
-    ]
+    ],
+    "logo": "https://raw.githubusercontent.com/ppegu/cbag-assets/main/blockchains/ethereum/info/logo.png"
   },
   {
     "id": "doge",
@@ -226,6 +229,7 @@
         "name": "whitepaper",
         "url": "https://github.com/dogecoin/dogecoin/blob/master/README.md"
       }
-    ]
+    ],
+    "logo": "https://raw.githubusercontent.com/ppegu/cbag-assets/main/blockchains/doge/info/logo.png"
   }
 ]
