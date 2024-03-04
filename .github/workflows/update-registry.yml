@@ -1,0 +1,25 @@
+name: registry
+
+on:
+  push:
+    branches:
+      - "*"
+    tags:
+      - "v*"
+  pull_request:
+  create:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Bun.sh
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: "1.0.22"
+
+      - name: run update script
+        run: bun i && bun run registry
