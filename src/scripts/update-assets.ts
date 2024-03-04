@@ -51,7 +51,9 @@ function updateBlockchainAssets(network: string) {
       tokens.push({
         ...info,
         network: network,
-        logo: getGithubFileUrl(`blockchains/${network}/${folder}/logo.png`),
+        logo: getGithubFileUrl(
+          `blockchains/${network}/assets/${folder}/logo.png`
+        ),
       });
     }
 
