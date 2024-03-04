@@ -46,7 +46,7 @@ function updateBlockchainAssets(folder: string) {
 
       if (!info) continue;
 
-      tokens.push({ ...info, network: folder });
+      tokens.push({ ...info });
     }
 
     /**update tokens.json inside the respective blockchain folder */
