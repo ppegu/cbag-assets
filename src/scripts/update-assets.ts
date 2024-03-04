@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { blockchainsPath } from "./constant";
+import { blockchainsPath, getGithubFileUrl } from "./constant";
 
 function readFolderInfo(path: string) {
   try {
@@ -46,7 +46,11 @@ function updateBlockchainAssets(network: string) {
 
       if (!info) continue;
 
-      tokens.push({ ...info, network: network });
+      tokens.push({
+        ...info,
+        network: network,
+        logo: getGithubFileUrl(`blockchains/${network}/${folder}/logo.png`),
+      });
     }
 
     /**update tokens.json inside the respective blockchain folder */

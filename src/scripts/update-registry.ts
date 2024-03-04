@@ -1,6 +1,10 @@
 import fs from "fs";
 import path from "path";
-import { blockchainsPath, registryJsonPath } from "./constant";
+import {
+  blockchainsPath,
+  getGithubFileUrl,
+  registryJsonPath,
+} from "./constant";
 
 function main() {
   console.log("Updating registry...");
@@ -25,7 +29,10 @@ function main() {
 
       const info = JSON.parse(infoBuffer.toString());
 
-      blockchains.push(info);
+      blockchains.push({
+        ...info,
+        logo: getGithubFileUrl(`blockchains/${folder}/info/logo.png`),
+      });
     } catch (error) {
       console.error(error);
     }
