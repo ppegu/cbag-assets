@@ -3,11 +3,7 @@ name: assets
 on:
   push:
     branches:
-      - "*"
-    tags:
-      - "v*"
-  pull_request:
-  create:
+      - "main"
 
 jobs:
   update:
@@ -23,3 +19,12 @@ jobs:
 
       - name: run update script
         run: bun i && bun run assets
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "ppegu"
+          git config user.email "pranpegu997@gmail.com"
+
+          git add .
+          git commit -m "Update assets"
+          git push
