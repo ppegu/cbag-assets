@@ -25,7 +25,7 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git status --porcelain | grep -q .
+          git status --porcelain | grep -q . || true
           CHANGES=$?
 
           if [ $CHANGES -eq 0 ]; then
