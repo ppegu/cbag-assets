@@ -59,7 +59,7 @@ function updateBlockchainAssets(network: string) {
     const tokensPath = path.join(folderPath, "tokens.json");
     fs.writeFileSync(tokensPath, JSON.stringify(tokens, null, 2));
 
-    console.log("Updated assets for:", network);
+    console.log("Updated", tokens.length, "tokens for:", network);
     console.timeEnd(network);
   } catch (error) {
     console.error(error);
