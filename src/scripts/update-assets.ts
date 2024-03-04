@@ -14,13 +14,13 @@ function readFolderInfo(path: string) {
 
 /**
  * update blockchains available folders assets
- * @param blockchain string
+ * @param network string
  */
-function updateBlockchainAssets(blockchain: string) {
+function updateBlockchainAssets(network: string) {
   try {
-    console.log("Updating assets for:", blockchain);
-    console.time(blockchain);
-    const folderPath = path.join(blockchainsPath, blockchain);
+    console.log("Updating assets for:", network);
+    console.time(network);
+    const folderPath = path.join(blockchainsPath, network);
 
     const info = JSON.parse(
       fs.readFileSync(path.join(folderPath, "info/info.json")).toString()
@@ -46,15 +46,15 @@ function updateBlockchainAssets(blockchain: string) {
 
       if (!info) continue;
 
-      tokens.push({ ...info, blockchain });
+      tokens.push({ ...info, network: network });
     }
 
     /**update tokens.json inside the respective blockchain folder */
     const tokensPath = path.join(folderPath, "tokens.json");
     fs.writeFileSync(tokensPath, JSON.stringify(tokens, null, 2));
 
-    console.log("Updated assets for:", blockchain);
-    console.timeEnd(blockchain);
+    console.log("Updated assets for:", network);
+    console.timeEnd(network);
   } catch (error) {
     console.error(error);
   }
