@@ -25,10 +25,16 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git config user.name "ppegu"
-          git config user.email "pranpegu997@gmail.com"
+          git status --porcelain | grep -q .
+          CHANGES=$?
 
-          git add .
-          git commit -m "Update registry"
-          git pull
-          git push
+          if [ $CHANGES -eq 0 ]; then
+            git config user.name "ppegu"
+            git config user.email "pranpegu997@gmail.com"
+            git add .
+            git commit -m "Update registry"
+            git pull
+            git push
+          else
+            echo "No changes to commit."
+          fi
