@@ -1,132 +1,5 @@
 [
   {
-    "id": "bitcoin",
-    "name": "Bitcoin",
-    "website": "https://bitcoin.org",
-    "description": "Bitcoin is a cryptocurrency and worldwide payment system. It is the first decentralized digital currency, as the system works without a central bank or single administrator.",
-    "explorer": {
-      "url": "https://mempool.space",
-      "txPath": "/tx/",
-      "accountPath": "/address/",
-      "sampleTx": "0607f62530b68cfcc91c57a1702841dd399a899d0eecda8e31ecca3f52f01df2",
-      "sampleAccount": "17A16QmavnUfCW11DAApiJxp7ARnxN5pGX"
-    },
-    "research": "https://research.binance.com/en/projects/bitcoin",
-    "symbol": "BTC",
-    "type": "coin",
-    "decimals": 8,
-    "blockchain": "bitcoin",
-    "status": "active",
-    "derivation": [
-      {
-        "name": "segwit",
-        "path": "m/84'/0'/0'/0/0",
-        "xpub": "0x04b24746",
-        "xprv": "0x04b2430c"
-      },
-      {
-        "name": "legacy",
-        "path": "m/44'/0'/0'/0/0",
-        "xpub": "0x0488b21e",
-        "xprv": "0x0488ade4"
-      },
-      {
-        "name": "testnet",
-        "path": "m/84'/1'/0'/0/0",
-        "xpub": "0x04b24746",
-        "xprv": "0x04b2430c"
-      }
-    ],
-    "wif": "0x80",
-    "hrp": "bc",
-    "p2pkhPrefix": 0,
-    "p2shPrefix": 5,
-    "links": [
-      {
-        "name": "github",
-        "url": "https://github.com/bitcoin"
-      },
-      {
-        "name": "twitter",
-        "url": "https://twitter.com/Bitcoin"
-      },
-      {
-        "name": "reddit",
-        "url": "https://reddit.com/r/Bitcoin"
-      },
-      {
-        "name": "whitepaper",
-        "url": "https://bitcoin.org/bitcoin.pdf"
-      }
-    ],
-    "info": {
-      "url": "https://bitcoin.org",
-      "source": "https://github.com/trezor/blockbook",
-      "rpc": "",
-      "documentation": "https://github.com/trezor/blockbook/blob/master/docs/api.md"
-    },
-    "logo": "https://raw.githubusercontent.com/ppegu/cbag-assets/main/blockchains/bitcoin/info/logo.png"
-  },
-  {
-    "id": "litecoin",
-    "name": "Litecoin",
-    "website": "https://litecoin.org/",
-    "description": "Litecoin is a peer-to-peer Internet currency that enables instant, near-zero cost payments to anyone in the world.",
-    "research": "https://research.binance.com/en/projects/litecoin",
-    "symbol": "LTC",
-    "type": "coin",
-    "decimals": 8,
-    "status": "active",
-    "blockchain": "bitcoin",
-    "derivation": [
-      {
-        "path": "m/84'/2'/0'/0/0",
-        "xpub": "0x04b24746",
-        "xprv": "0x04b2430c"
-      },
-      {
-        "name": "legacy",
-        "path": "m/44'/2'/0'/0/0",
-        "xpub": "0x0488b21e",
-        "xprv": "0x0488ade4"
-      }
-    ],
-    "wif": "0x30",
-    "p2pkhPrefix": 48,
-    "p2shPrefix": 50,
-    "hrp": "ltc",
-    "explorer": {
-      "url": "https://blockchair.com/litecoin",
-      "txPath": "/transaction/",
-      "accountPath": "/address/"
-    },
-    "info": {
-      "url": "https://litecoin.org",
-      "source": "https://github.com/trezor/blockbook",
-      "rpc": "",
-      "documentation": "https://github.com/trezor/blockbook/blob/master/docs/api.md"
-    },
-    "links": [
-      {
-        "name": "github",
-        "url": "https://github.com/litecoin-project/litecoin"
-      },
-      {
-        "name": "twitter",
-        "url": "https://twitter.com/LitecoinProject"
-      },
-      {
-        "name": "reddit",
-        "url": "https://reddit.com/r/litecoin"
-      },
-      {
-        "name": "whitepaper",
-        "url": "https://www.allcryptowhitepapers.com/litecoin-whitepaper/"
-      }
-    ],
-    "logo": "https://raw.githubusercontent.com/ppegu/cbag-assets/main/blockchains/litecoin/info/logo.png"
-  },
-  {
     "id": "ethereum",
     "name": "Ethereum",
     "website": "https://ethereum.org/",
@@ -181,6 +54,135 @@
     "logo": "https://raw.githubusercontent.com/ppegu/cbag-assets/main/blockchains/ethereum/info/logo.png"
   },
   {
+    "id": "litecoin",
+    "name": "Litecoin",
+    "website": "https://litecoin.org/",
+    "description": "Litecoin is a peer-to-peer Internet currency that enables instant, near-zero cost payments to anyone in the world.",
+    "research": "https://research.binance.com/en/projects/litecoin",
+    "symbol": "LTC",
+    "type": "coin",
+    "decimals": 8,
+    "status": "active",
+    "blockchain": "bitcoin",
+    "derivation": [
+      {
+        "path": "m/84'/2'/0'/0/0",
+        "xpub": "0x04b24746",
+        "xprv": "0x04b2430c"
+      },
+      {
+        "name": "legacy",
+        "path": "m/44'/2'/0'/0/0",
+        "xpub": "0x0488b21e",
+        "xprv": "0x0488ade4"
+      }
+    ],
+    "wif": "0x30",
+    "privateKeyPrefix": "0xb0",
+    "p2pkhPrefix": 48,
+    "p2shPrefix": 50,
+    "hrp": "ltc",
+    "explorer": {
+      "url": "https://blockchair.com/litecoin",
+      "txPath": "/transaction/",
+      "accountPath": "/address/"
+    },
+    "info": {
+      "url": "https://litecoin.org",
+      "source": "https://github.com/trezor/blockbook",
+      "rpc": "",
+      "documentation": "https://github.com/trezor/blockbook/blob/master/docs/api.md"
+    },
+    "links": [
+      {
+        "name": "github",
+        "url": "https://github.com/litecoin-project/litecoin"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/LitecoinProject"
+      },
+      {
+        "name": "reddit",
+        "url": "https://reddit.com/r/litecoin"
+      },
+      {
+        "name": "whitepaper",
+        "url": "https://www.allcryptowhitepapers.com/litecoin-whitepaper/"
+      }
+    ],
+    "logo": "https://raw.githubusercontent.com/ppegu/cbag-assets/main/blockchains/litecoin/info/logo.png"
+  },
+  {
+    "id": "bitcoin",
+    "name": "Bitcoin",
+    "website": "https://bitcoin.org",
+    "description": "Bitcoin is a cryptocurrency and worldwide payment system. It is the first decentralized digital currency, as the system works without a central bank or single administrator.",
+    "explorer": {
+      "url": "https://mempool.space",
+      "txPath": "/tx/",
+      "accountPath": "/address/",
+      "sampleTx": "0607f62530b68cfcc91c57a1702841dd399a899d0eecda8e31ecca3f52f01df2",
+      "sampleAccount": "17A16QmavnUfCW11DAApiJxp7ARnxN5pGX"
+    },
+    "research": "https://research.binance.com/en/projects/bitcoin",
+    "symbol": "BTC",
+    "type": "coin",
+    "decimals": 8,
+    "blockchain": "bitcoin",
+    "status": "active",
+    "derivation": [
+      {
+        "name": "segwit",
+        "path": "m/84'/0'/0'/0/0",
+        "xpub": "0x04b24746",
+        "xprv": "0x04b2430c"
+      },
+      {
+        "name": "legacy",
+        "path": "m/44'/0'/0'/0/0",
+        "xpub": "0x0488b21e",
+        "xprv": "0x0488ade4"
+      },
+      {
+        "name": "testnet",
+        "path": "m/84'/1'/0'/0/0",
+        "xpub": "0x04b24746",
+        "xprv": "0x04b2430c"
+      }
+    ],
+    "wif": "0x00",
+    "privateKeyPrefix": "0x80",
+    "hrp": "bc",
+    "p2pkhPrefix": 0,
+    "p2shPrefix": 5,
+    "links": [
+      {
+        "name": "github",
+        "url": "https://github.com/bitcoin"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/Bitcoin"
+      },
+      {
+        "name": "reddit",
+        "url": "https://reddit.com/r/Bitcoin"
+      },
+      {
+        "name": "whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ],
+    "info": {
+      "url": "https://bitcoin.org",
+      "source": "https://github.com/trezor/blockbook",
+      "rpc": "",
+      "documentation": "https://github.com/trezor/blockbook/blob/master/docs/api.md"
+    },
+    "logo": "https://raw.githubusercontent.com/ppegu/cbag-assets/main/blockchains/bitcoin/info/logo.png"
+  },
+  {
     "id": "doge",
     "name": "Dogecoin",
     "website": "http://dogecoin.com",
@@ -198,7 +200,8 @@
         "xprv": "0x02fac398"
       }
     ],
-    "wif": "0x9E",
+    "wif": "0x1e",
+    "privateKeyPrefix": "0x9E",
     "p2pkhPrefix": 30,
     "p2shPrefix": 22,
     "explorer": {
