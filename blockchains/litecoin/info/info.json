@@ -22,7 +22,8 @@
             "xprv": "0x0488ade4"
         }
     ],
-    "wif": "0xB0",
+    "wif": "0x30",
+    "privateKeyPrefix": "0xb0",
     "p2pkhPrefix": 48,
     "p2shPrefix": 50,
     "hrp": "ltc",

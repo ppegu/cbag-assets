@@ -16,7 +16,8 @@
             "xprv": "0x02fac398"
         }
     ],
-    "wif": "0x9E",
+    "wif": "0x1e",
+    "privateKeyPrefix": "0x9E",
     "p2pkhPrefix": 30,
     "p2shPrefix": 22,
     "explorer": {

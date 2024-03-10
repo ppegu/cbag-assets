@@ -36,7 +36,8 @@
             "xprv": "0x04b2430c"
         }
     ],
-    "wif": "0x80",
+    "wif": "0x00",
+    "privateKeyPrefix": "0x80",
     "hrp": "bc",
     "p2pkhPrefix": 0,
     "p2shPrefix": 5,
