@@ -3,13 +3,15 @@
   "module": "src/index.ts",
   "type": "module",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "release-it": "^17.1.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "scripts": {
     "registry": "bun src/scripts/update-registry.ts",
-    "assets": "bun src/scripts/update-assets.ts"
+    "assets": "bun src/scripts/update-assets.ts",
+    "release": "release-it"
   }
 }
