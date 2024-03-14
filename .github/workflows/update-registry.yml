@@ -28,10 +28,10 @@ jobs:
           if [[ $(git status --porcelain) ]]; then
             git config user.name "ppegu"
             git config user.email "pranpegu997@gmail.com"
+            git pull origin main
             git add .
             git commit -m "Update registry"
-            git pull
-            git push
+            git push origin main
           else
             echo "No changes to commit."
           fi
