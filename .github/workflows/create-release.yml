@@ -1,9 +1,10 @@
 name: create-release
 
 on:
-  push:
-    branches:
-      - "main"
+  workflow_run:
+    workflows: ["update-registry-and-assets"]
+    types:
+      - completed
 
 permissions:
   contents: write
