@@ -243,6 +243,7 @@
     "explorer": "https://bscscan.com/",
     "research": "https://research.binance.com/en/projects/bnb",
     "symbol": "BNB",
+    "blockchain": "ethereum",
     "type": "coin",
     "decimals": 18,
     "status": "active",
