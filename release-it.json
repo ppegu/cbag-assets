@@ -1,7 +1,7 @@
 {
     "git": {
         "tagName": "${version}",
-        "commitMessage": "Release ${version}",
+        "commitMessage": "Releases ${version}",
         "changelog": "CHANGELOG.md"
     },
     "github": {
