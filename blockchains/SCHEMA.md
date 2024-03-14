@@ -1,5 +1,5 @@
 `{
-    "id": "bitcoin", #unique
+    "id": "bitcoin", #unique change
     "name": "Bitcoin",
     "website": "https://bitcoin.org",
     "description": "Bitcoin is a cryptocurrency and worldwide payment system. It is the first decentralized digital currency, as the system works without a central bank or single administrator.",
