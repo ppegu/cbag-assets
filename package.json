@@ -16,6 +16,11 @@
     "assets": "bun src/scripts/update-assets.ts",
     "release": "release-it -f"
   },
+  "author": {
+    "name": "Pran Pegu",
+    "email": "pranpegu997@gmail.com",
+    "url": "https://github.com/ppegu"
+  },
   "release-it": {
     "git": {
       "commitMessage": "chore: release ${version}",
