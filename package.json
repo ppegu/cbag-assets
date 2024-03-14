@@ -14,7 +14,7 @@
   "scripts": {
     "registry": "bun src/scripts/update-registry.ts",
     "assets": "bun src/scripts/update-assets.ts",
-    "release": "release-it"
+    "release": "release-it -f"
   },
   "release-it": {
     "git": {
