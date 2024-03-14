@@ -1,59 +1,5 @@
 [
   {
-    "id": "ethereum",
-    "name": "Ethereum",
-    "website": "https://ethereum.org/",
-    "description": "Open source platform to write and distribute decentralized applications.",
-    "research": "https://research.binance.com/en/projects/ethereum",
-    "symbol": "ETH",
-    "type": "coin",
-    "decimals": 18,
-    "blockchain": "ethereum",
-    "status": "active",
-    "tags": [
-      "dapp",
-      "staking-native"
-    ],
-    "derivation": [
-      {
-        "path": "m/44'/60'/0'/0/0"
-      }
-    ],
-    "chainId": "1",
-    "explorer": {
-      "url": "https://etherscan.io",
-      "txPath": "/tx/",
-      "accountPath": "/address/",
-      "sampleTx": "0x9edaf0f7d9c6629c31bbf0471fc07d696c73b566b93783f7e25d8d5d2b62fa4f",
-      "sampleAccount": "0x5bb497e8d9fe26e92dd1be01e32076c8e024d167"
-    },
-    "info": {
-      "url": "https://ethereum.org",
-      "source": "https://github.com/ethereum/go-ethereum",
-      "rpc": "https://mainnet.infura.io",
-      "documentation": "https://eth.wiki/json-rpc/API"
-    },
-    "links": [
-      {
-        "name": "github",
-        "url": "https://github.com/ethereum"
-      },
-      {
-        "name": "twitter",
-        "url": "https://twitter.com/ethereum"
-      },
-      {
-        "name": "reddit",
-        "url": "https://reddit.com/r/ethereum"
-      },
-      {
-        "name": "whitepaper",
-        "url": "https://github.com/ethereum/wiki/wiki/White-Paper"
-      }
-    ],
-    "logo": "https://raw.githubusercontent.com/ppegu/cbag-assets/main/blockchains/ethereum/info/logo.png"
-  },
-  {
     "id": "litecoin",
     "name": "Litecoin",
     "website": "https://litecoin.org/",
@@ -181,6 +127,60 @@
       "documentation": "https://github.com/trezor/blockbook/blob/master/docs/api.md"
     },
     "logo": "https://raw.githubusercontent.com/ppegu/cbag-assets/main/blockchains/bitcoin/info/logo.png"
+  },
+  {
+    "id": "ethereum",
+    "name": "Ethereum",
+    "website": "https://ethereum.org/",
+    "description": "Open source platform to write and distribute decentralized applications.",
+    "research": "https://research.binance.com/en/projects/ethereum",
+    "symbol": "ETH",
+    "type": "coin",
+    "decimals": 18,
+    "blockchain": "ethereum",
+    "status": "active",
+    "tags": [
+      "dapp",
+      "staking-native"
+    ],
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "chainId": "1",
+    "explorer": {
+      "url": "https://etherscan.io",
+      "txPath": "/tx/",
+      "accountPath": "/address/",
+      "sampleTx": "0x9edaf0f7d9c6629c31bbf0471fc07d696c73b566b93783f7e25d8d5d2b62fa4f",
+      "sampleAccount": "0x5bb497e8d9fe26e92dd1be01e32076c8e024d167"
+    },
+    "info": {
+      "url": "https://ethereum.org",
+      "source": "https://github.com/ethereum/go-ethereum",
+      "rpc": "https://mainnet.infura.io",
+      "documentation": "https://eth.wiki/json-rpc/API"
+    },
+    "links": [
+      {
+        "name": "github",
+        "url": "https://github.com/ethereum"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/ethereum"
+      },
+      {
+        "name": "reddit",
+        "url": "https://reddit.com/r/ethereum"
+      },
+      {
+        "name": "whitepaper",
+        "url": "https://github.com/ethereum/wiki/wiki/White-Paper"
+      }
+    ],
+    "logo": "https://raw.githubusercontent.com/ppegu/cbag-assets/main/blockchains/ethereum/info/logo.png"
   },
   {
     "id": "doge",
