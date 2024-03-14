@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - "main"
+    paths: ["blockchains"]
   pull_request:
     branches:
       - "main"
+    paths: ["blockchains"]
 
 permissions:
   contents: write
