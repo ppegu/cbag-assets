@@ -1,4 +1,4 @@
-name: assets
+name: update-registry-and-assets
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
           bun-version: "1.0.22"
 
       - name: run update script
-        run: bun i && bun run assets
+        run: bun i && bun registry && bun assets
 
       - name: Commit and Push Changes
         run: |
@@ -30,7 +30,7 @@ jobs:
              git config user.email "pranpegu997@gmail.com"
              git pull origin main
              git add .
-             git commit -m "Update assets"
+             git commit -m "Update registry and assets"
              git push origin main
           else
              echo "No changes to commit."
