@@ -4,6 +4,7 @@
   "module": "src/index.ts",
   "type": "module",
   "devDependencies": {
+    "@release-it/conventional-changelog": "^8.0.1",
     "@types/bun": "latest",
     "release-it": "^17.1.1"
   },
