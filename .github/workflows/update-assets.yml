@@ -5,12 +5,12 @@ on:
     branches:
       - "main"
     paths:
-      - blockchains/
+      - blockchains/**/**/**
   pull_request:
     branches:
       - "main"
     paths:
-      - blockchains/
+      - blockchains/**/**/**
 
 permissions:
   contents: write
