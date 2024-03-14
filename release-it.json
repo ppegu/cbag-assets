@@ -10,5 +10,7 @@
         "draft": false,
         "tokenRef": "GITHUB_TOKEN"
     },
-    "npm": false
+    "npm": {
+        "release": false
+    }
 }
