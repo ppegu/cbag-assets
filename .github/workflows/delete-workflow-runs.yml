@@ -1,4 +1,4 @@
-name: Workflow Cleanup Bot
+name: Workflow Cleanup Bots
 on:
   schedule:
     - cron: "*/1 * * * *"
