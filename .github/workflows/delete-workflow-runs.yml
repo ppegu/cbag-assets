@@ -1,19 +1,16 @@
-name: Workflow Cleanup Bot
-
+name: Experiment
 on:
   schedule:
-    - cron: "*/1 * * * *"
+    - cron: "*/5 * * * *"
 
 jobs:
-  cleanup:
+  job1:
+    name: Debug
     runs-on: ubuntu-latest
+
     steps:
-      - name: Delete old workflow runs
-        run: |
-          TOKEN="${{ secrets.GITHUB_TOKEN }}"
-          REPO_OWNER="${{ github.repository_owner }}"
-          REPO_NAME="${{ github.event.repository.name }}"
-          RUN_ID=$(curl -s -X GET -H "Authorization: token $TOKEN" "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/actions/runs" | jq -r '.workflow_runs[].id')
-          for id in $RUN_ID; do
-              curl -s -X DELETE -H "Authorization: token $TOKEN" "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/actions/runs/$id"
-          done
+      - name: Git checkout
+        uses: actions/checkout@v2
+        with: { ref: debug }
+      - name: List files
+        run: ls
