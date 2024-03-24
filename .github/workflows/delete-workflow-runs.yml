@@ -1,4 +1,4 @@
-name: Workflow Cleanup Bot
+name: Delete workflow runs
 on:
   schedule:
     - cron: "*/1 * * * *"
